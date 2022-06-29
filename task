@@ -1,0 +1,45 @@
+Balanced Smileys
+
+Programming challenge description:
+
+Credits: This problem appeared in the Facebook Hacker Cup 2013Hackathon.
+
+Your friend John uses a lot of emoticons when you talk to him onMessenger. In addition to being a person who likes to expresshimself through emoticons, he hates unbalanced parenthesis so muchthat it makes him go :(.
+
+Sometimes he puts emoticons within parentheses, and you find ithard to tell if a parenthesis really is a parenthesis or part of anemoticon. A message has balanced parentheses if it consists of oneof the following:
+
+- An empty string ""
+- One or more of the following characters: 'a' to 'z', ' ' (aspace) or ':' (a colon)
+- An open parenthesis '(', followed by a message with balancedparentheses, followed by a close parenthesis ')'.
+- A message with balanced parentheses followed by another messagewith balanced parentheses.
+- A smiley face ":)" or a frowny face ":("
+
+Write a program that determines if there is a way to interpret hismessage while leaving the parentheses balanced.
+
+Input:
+
+Your program should read lines from standard input. Each linecontains a message that you got from John.
+
+Output:
+
+Print out the string "YES"/"NO" (all quotes for clarity only)stating whether or not it is possible that the message had balancedparentheses
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+
+public class Main {
+/**
+* Iterate through each line of input.
+*/
+public static void main(String[] args) throws IOException {
+InputStreamReader reader = new InputStreamReader(System.in,StandardCharsets.UTF_8);
+BufferedReader in = new BufferedReader(reader);
+String line;
+while ((line = in.readLine()) != null) {
+  
+System.out.println(line);
+}
+}
+}
